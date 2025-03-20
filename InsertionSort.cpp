@@ -19,8 +19,8 @@ void input(){
 
 void InsertionSort(){
     int temp, j;
-    for (int i = 1; i < n; i++){
-        temp = arr{i};
+    for (int i = 1; i < n; i++) {
+        temp = arr[i];
         j = i - 1;
         while (j>= 0 && arr[j] > temp){
             arr[j + 1] = arr[j];
@@ -36,4 +36,12 @@ void Display(){
         cout << arr[i] << " ";
     }
     cout << endl;
+}
+
+int main(){
+    input();
+    InsertionSort();
+    Display();
+    system("pause");
+    return 0;
 }
