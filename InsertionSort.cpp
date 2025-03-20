@@ -29,3 +29,11 @@ void InsertionSort(){
         arr[j + 1] = temp;
     }
 }
+
+void Display(){
+    cout << "\nElement array yang telah tersusun: \n";
+    for (int i = 0; i < n; i++){
+        cout << arr[i] << " ";
+    }
+    cout << endl;
+}
