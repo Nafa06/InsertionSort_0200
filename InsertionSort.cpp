@@ -7,7 +7,13 @@ int n; // variabel jumlah elemen dalam array
 void input(){
     while (true){
         cout << "Masukkan jumlah data pada array (maksimal 20): ";
-        cin >> n;    
+        cin >> n;
+
+        if (n <= 20){
+            break;
+        } else {
+            cout << "\nArray yang anda masukkan maksimal 20 elemen.\n";
+        }
     }
     cout << "\nArray yang anda masukkan maksimal 20 elemen.\n";
     for (int i = 0; i < n; i++){
